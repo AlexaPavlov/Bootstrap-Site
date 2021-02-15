@@ -1,0 +1,219 @@
+/*------------------- VARIABLE SECTION -------------------*/
+:root {
+  --theme-color: #f38181;
+  --theme-neutral-color: #eaffd0;
+  --theme-accent-color: #fce38a;
+  --theme-footer-color: #95e1d3;
+  --font-color: #252a34;
+  --theme-font-family: 'Montserrat', sans-serif;
+  --brand-font-family: 'Ubuntu', sans-serif;
+}
+
+/*---------------------- TAG SECTION ---------------------*/
+body {
+  font-family: var(--theme-font-family);
+  text-align: center;
+}
+
+/*--------------------- CLASS SECTION --------------------*/
+
+/* Headings */
+
+.big-heading {
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+  line-height: 1.5;
+  margin: 3rem 0 2.5rem;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    padding: 0 10%;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* Header */
+
+.header-container {
+  background-color: var(--theme-color);
+  padding: 3% 20%;
+}
+
+.header {
+  margin-bottom: 6rem;
+  text-align: left;
+}
+
+.header button {
+  margin: 1rem 0;
+}
+
+.img-header {
+  position: relative;
+}
+
+.img-header img {
+  height: 550px;
+}
+
+@media screen and (min-width: 1400px) {
+  .img-header img {
+    position: absolute;
+    top: 3rem;
+    right: 7rem;
+    /* z-index: 1; */
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+}
+
+@media (max-width: 1399px) and (min-width:992px) {
+  .img-header img {
+    position: absolute;
+    top: 3rem;
+    right: 2.5rem;
+    /* z-index: 1; */
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    text-align: center;
+  }
+}
+
+/* Navigation */
+
+.navbar-dark .navbar-brand {
+  font-family: var(--brand-font-family);
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.navbar-dark .navbar-nav {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Features */
+
+.icon-color {
+  color: var(--theme-color);
+}
+
+.icon-color:hover {
+  color: var(--theme-neutral-color);
+}
+
+/* Testimonials */
+
+.testimonials-img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.testimonials-signature {
+  padding-left: 2rem;
+}
+
+.press-img {
+  width: 70%;
+  margin: 1rem 0.5rem 2rem;
+}
+
+/* Footer */
+
+.footer-icons {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+/*---------------------- ID SECTION ----------------------*/
+
+#features {
+  position: relative;
+  bottom: 2rem;
+  /* z-index: 2; */
+  background-color: white;
+}
+
+#features .row div {
+  padding: 7rem 5rem;
+  font-weight: 400;
+  color: grey;
+}
+
+#features h3 {
+  color: black;
+}
+
+#testimonials {
+  background-color: var(--theme-color);
+  color: white;
+  padding: 7rem 0;
+}
+
+#testimonials .carousel-control-prev,
+#testimonials .carousel-control-next {
+  top: 51%;
+  bottom: 51%;
+  border: none;
+  padding: 0 2rem;
+}
+
+#testimonials .carousel-control-prev {
+  justify-content: flex-start;
+}
+
+#testimonials .carousel-control-next {
+  justify-content: flex-end;
+}
+
+#press {
+  background-color: var(--theme-color);
+  padding-bottom: 3rem;
+}
+
+#pricing {
+  margin-top: 7rem;
+}
+
+#pricing .card {
+  height: 100%;
+}
+
+#pricing p {
+  color: grey;
+}
+
+#cta .container-fluid {
+  background-color: var(--theme-color);
+  margin: 7rem 0;
+}
+
+#cta .container {
+  padding: 4rem 15% 10rem;
+}
+
+#footer p {
+  font-size: 0.8rem;
+  color: grey;
+  margin-top: 1.5rem;
+}
